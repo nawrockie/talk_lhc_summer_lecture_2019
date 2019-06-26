@@ -28,7 +28,7 @@
 %Slide 0 - title
 \begin{slide}
 \begin{center}
-\large{\textbf{Harnessing conserved secondary structure\\to computationally identify RNA homologs}}
+\large{\textbf{RNA sequence analysis using profiles}}
 
 \normalsize
 
@@ -62,6 +62,15 @@ Bethesda, MD, USA\\
 
 %\includegraphics[width=2.5in]{figs/janelia-logo}
 \end{center}
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Central dogma of molecular biology}
+\end{center}
+\medskip
+\begin{slide}
+\center{\includegraphics[width=5in]{figs/central-dogma}}
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
@@ -141,7 +150,7 @@ other           & telomerase RNA & & & x \\
 
 \center{\includegraphics[width=2.5in]{figs/rfam-logo}}
 
-database of more than 2400 non-coding RNA families \\ each represented by a
+database of more than 3000 non-coding RNA families \\ each represented by a
 secondary structure, alignment, and covariance model.
 \end{center}
 
@@ -653,12 +662,12 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 \begin{slide}
 \begin{center}
 
-\textbf{Rfam used BLAST filters from 2003 to 2012}
+\textbf{Rfam originally used BLAST filters}
 
 \end{center}
 
 \begin{itemize}
-\item Rfam includes $>$ 2400 RNA families, each represented by an
+\item Rfam includes $>$ 3000 RNA families, each represented by an
   alignment, CM and set of predicted homologs in a large database (Rfamseq).
 \end{itemize}
 
@@ -670,12 +679,12 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 \begin{slide}
 \begin{center}
 
-\textbf{Rfam used BLAST filters from 2003 to 2012}
+\textbf{Rfam originally used BLAST filters}
 
 \end{center}
 
 \begin{itemize}
-\item Rfam includes $>$ 2000 RNA families, each represented by an
+\item Rfam includes $>$ 3000 RNA families, each represented by an
   alignment, CM and set of predicted homologs in a large database (Rfamseq).
 \end{itemize}
 
@@ -687,7 +696,7 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 \begin{slide}
 \begin{center}
 
-\textbf{Rfam 12.0 (2014)\footnote{Nawrocki, Burge et. al, NAR 43:D130-D137, 2015.}, 
+\textbf{Rfam 12.0\footnote{Nawrocki, Burge et. al, NAR 43:D130-D137, 2015.}, 
 first release without BLAST filtering}
 \end{center}
 
@@ -709,7 +718,7 @@ first release without BLAST filtering}
 \begin{slide}
 \begin{center}
 
-\textbf{Rfam 12.0 (2014)\footnote{Nawrocki, Burge et. al, NAR 43:D130-D137, 2015.}, 
+\textbf{Rfam 12.0\footnote{Nawrocki, Burge et. al, NAR 43:D130-D137, 2015.}, 
 first release without BLAST filtering}
 
 \end{center}
@@ -794,6 +803,55 @@ New (Infernal 1.1)         & 4222.2   &  201,814 & 22,312 \\
 \end{center}
 \vfill
 \end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+
+\large
+\begin{center}
+\large{\textbf{Acknowledgements}} \\
+
+\vspace{0.5in}
+
+\textbf{Alejandro Sch\"{a}ffer} \\
+\textbf{David Landsman} \\
+\textbf{David Lipman}
+
+\vspace{0.5in}
+
+\normalsize
+%\begin{tabular}{llllll}
+%Sean Eddy           & & & & & Michael Brent \\ 
+%Elena Rivas         & & & & & Jeremy Buhler \\
+%Tom Jones           & & & & & Justin Fay \\
+%Diana Kolbe         & & & & & Jeff Gordon \\
+%Seolkyoung Jung     & & & & & Rob Mitra \\
+%Sergi Castellano    & & & & & Gary Stormo \\
+%Fred Davis          & & & & & \\
+%Lee Henry           & & & & & \\
+%Michael Farrar      & & & & & \\
+%Travis Wheeler      & & & & & \\
+\begin{tabular}{l|l}
+\textbf{Janelia} & \textbf{EBI (Rfam)} \\ \hline
+Sean Eddy           & Alex Bateman \\
+Elena Rivas         & Rob Finn \\
+Travis Wheeler      & Anton Petrov \\
+Tom Jones           & Ioanna Kalvari \\
+Diana Kolbe         & Joanna Argasinska \\
+Seolkyoung Jung     & Paul Gardner \\
+Rob Finn            & Sarah Burge \\ 
+Jody Clements       & Evan Floden \\
+Fred Davis          & John Tate \\
+Lee Henry           & Jen Daub \\
+Michael Farrar      & \\
+\end{tabular}
+
+%\includegraphics[height=3in]{figs/jfrc-banner1}
+
+\end{center}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
@@ -986,55 +1044,6 @@ cmscan v1.1.2   &     0.5h& 1735.0  & \textcolor{blue}{26.7h}   & \textcolor{blu
 
 \end{slide}
 \end{comment}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-
-\large
-\begin{center}
-\large{\textbf{Acknowledgements}} \\
-
-\vspace{0.5in}
-
-\textbf{Alejandro Sch\"{a}ffer} \\
-\textbf{David Landsman} \\
-\textbf{David Lipman}
-
-\vspace{0.5in}
-
-\normalsize
-%\begin{tabular}{llllll}
-%Sean Eddy           & & & & & Michael Brent \\ 
-%Elena Rivas         & & & & & Jeremy Buhler \\
-%Tom Jones           & & & & & Justin Fay \\
-%Diana Kolbe         & & & & & Jeff Gordon \\
-%Seolkyoung Jung     & & & & & Rob Mitra \\
-%Sergi Castellano    & & & & & Gary Stormo \\
-%Fred Davis          & & & & & \\
-%Lee Henry           & & & & & \\
-%Michael Farrar      & & & & & \\
-%Travis Wheeler      & & & & & \\
-\begin{tabular}{l|l}
-\textbf{Janelia} & \textbf{EBI (Rfam)} \\ \hline
-Sean Eddy           & Alex Bateman \\
-Elena Rivas         & Rob Finn \\
-Travis Wheeler      & Anton Petrov \\
-Tom Jones           & Ioanna Kalvari \\
-Diana Kolbe         & Joanna Argasinska \\
-Seolkyoung Jung     & Paul Gardner \\
-Rob Finn            & Sarah Burge \\ 
-Jody Clements       & Evan Floden \\
-Fred Davis          & John Tate \\
-Lee Henry           & Jen Daub \\
-Michael Farrar      & \\
-\end{tabular}
-
-%\includegraphics[height=3in]{figs/jfrc-banner1}
-
-\end{center}
-
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
 \textbf{Applications of CMs}
