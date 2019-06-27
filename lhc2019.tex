@@ -66,11 +66,11 @@ Bethesda, MD, USA\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{Central dogma of molecular biology}
+\large{\textbf{Central dogma of molecular biology}}
 \end{center}
 \medskip
-\begin{slide}
 \center{\includegraphics[width=5in]{figs/central-dogma}}
+\vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
@@ -157,6 +157,7 @@ secondary structure, alignment, and covariance model.
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
 \textbf{Outline of talk}
@@ -170,7 +171,7 @@ secondary structure, alignment, and covariance model.
 %\item[3.] Benchmarking RNA homology search
 \item[3.] Accelerating RNA homology search
 \item[4.] Implications for Rfam
-\item[5.] New features in latest version of Infernal
+%\item[5.] New features in latest version of Infernal
 \end{description}
 
 \end{center}
@@ -292,6 +293,41 @@ family members to find additional homologs.}
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+{\bf How do we find structural RNA homologs?}
+\medskip
+
+%Three representations of a transfer RNA:
+
+%\includegraphics[width=10.5in]{figs/trna-123}
+\includegraphics[width=9in]{figs/trna-123}
+\end{center}
+
+\small
+\begin{itemize}
+\item
+  BLAST: given a single sequence, search genomes for similar sequences.
+\item
+  Structural RNAs are difficult to find
+  \begin{itemize}
+  \item short ($\sim$ 100 nt) and evolve rapidly at sequence level
+  \item lack open reading frames
+  \item small, 4 letter alphabet 
+  \end{itemize}
+  \item
+  BLAST cannot take advantage of:
+\begin{itemize}
+  \item sequence conservation, which varies across the gene
+  \item secondary structure
+\end{itemize}
+\end{itemize}
+
+\vfill
+
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
 \textbf{Outline of talk}
@@ -304,7 +340,7 @@ family members to find additional homologs.}
 %\item[3.] Benchmarking RNA homology search
 \item[3.] Accelerating RNA homology search
 \item[4.] Implications for Rfam
-\item[5.] New features in latest version of Infernal
+%\item[5.] New features in latest version of Infernal
 \end{description}
 
 \end{center}
@@ -486,7 +522,7 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 %\item[3.] Benchmarking RNA homology search
 \item[\textcolor{red}{3.}] \textcolor{red}{Accelerating RNA homology search}
 \item[4.] Implications for Rfam
-\item[5.] New features in latest version of Infernal
+%\item[5.] New features in latest version of Infernal
 \end{description}
 
 \end{center}
@@ -652,7 +688,7 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 %\item[3.] Benchmarking RNA homology search
 \item[3.] Accelerating RNA homology search
 \item[\textcolor{red}{4.}] \textcolor{red}{Implications for Rfam}
-\item[5.] New features in latest version of Infernal
+%\item[5.] New features in latest version of Infernal
 \end{description}
 
 \end{center}
@@ -764,46 +800,116 @@ New (Infernal 1.1)         & 4222.2   &  201,814 & 22,312 \\
 \flushleft{Nawrocki, Burge et. al, NAR 43:D130-D137, 2015.} 
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{It is now easier to use Rfam/Infernal to annotate your own
-  datasets.} \\
-
+\textbf{Group I catalytic introns}
+\end{center}
+%
 \small
 \begin{itemize}
-\item A bacterial genome takes about 30 minutes for all 2474 models.
+\item self splicing ribozymes found in lower eukaryotes, higher
+  plants, bacteria and bacteriophages
+%\item core secondary structure (modeled by Rfam) consists of 9 paired
+%  regions
+\item often have ORFs (homing endonucleases) inserted in loop regions
+\item genes they are found in:
+\begin {itemize}
+\item bacteria and mitochondria and chloroplast of lower euks: rRNA, mRNA, and tRNAs
+\item higher plants mitochondria and chloroplast: a few tRNA and mRNA genes
+\item nuclear lower eukaryotic genomes: only rRNA
+%\item Gram positive bacteriophages: widely distributed
+%\item Gram negative bacteriophages: T4, T-even and T7-like
+\end{itemize}
 \end{itemize}
 
-\end{center}
+%\center{\includegraphics[height=4in]{figs/gp1-schematic-small.png}}
+\center{\includegraphics[height=4in]{figs/gp1-schematic-big.png}}\footnote{\small{A. Hedberg and S. D. Johansen, Mobile DNA, 2013 4:17}}
 
-%\center{\includegraphics[width=10.5in]{figs/rfam-nar-table2-published}}
-%\center{\includegraphics[width=10.5in]{figs/rfam-nar-table2-bac-yellow-yescaption}}
-\center{\includegraphics[width=10.5in]{figs/rfam-nar-table2-bac-yellow-nocaption}}
 
 \vfill
-\small
-\flushleft{Nawrocki, Burge et. al, NAR 43:D130-D137, 2015.} 
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
-\begin{center}
-\textbf{Outline of talk}
-
-\begin{description}
-\item[1.] Motivation: collecting homologs facilitates comparative
-  sequence analysis.\\ 1965: Secondary structure determination of
-  transfer RNA.
-\item[2.] Sequence and sequence+structure profiles
-%\item[3.] Benchmarking RNA homology search
-\item[3.] Accelerating RNA homology search
-\item[4.] Implications for Rfam
-\item[\textcolor{red}{5.}] \textcolor{red}{New features in latest version of Infernal}
-\end{description}
-
-\end{center}
+\center{\includegraphics[height=8in]{figs/RF00028-ss-info-ss-1}}
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\center{\includegraphics[height=8in]{figs/RF00028-ss-mutinfo-ss-1}}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\center{\includegraphics[height=8in]{figs/sean-slide-012215-gp1i-distro}}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+
+\center{\includegraphics[width=10in]{figs/gp1-fig2-ss}}\footnote{
+E. P. Nawrocki, T. A. Jones, and S. R. Eddy, NAR, 2018, gky414}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Could archaeal group I introns have evolved into BHB introns?}
+\end{center}
+\center{\includegraphics[width=8in]{figs/Tocchini-Valentini-title-screenshot}}\footnote{PNAS March 22, 2011. 108 (12) 4782-4787;}
+
+\textbf{Archaeal group I introns can occur in same host gene as BHB introns}
+
+\center{\includegraphics[width=10in]{figs/gp1-fig1-schematic}}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Group I introns are widespread in Archaea}
+\end{center}
+
+\center{\includegraphics[height=6.5in]{figs/gp1-fig3-cladogram}}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+
+\large
+\begin{center}
+\large{\textbf{Acknowledgements}} \\
+
+\normalsize
+\vspace{0.5in}
+
+\begin{tabular}{l|l}
+\textbf{Harvard/Janelia} & \textbf{NCBI} \\
+Sean Eddy                &  Alejandro Sch\"{a}ffer \\
+Tom Jones                &  David Landsman \\
+Diana Kolbe              &  Jim Ostell \\
+Travis Wheeler           &  David Lipman \\
+Elena Rivas              &  \\
+Michael Farrar           & \\
+                & \\ \hline
+                & \\
+\textbf{GISSD}  & \textbf{David Haussler's group} \\
+Yu Zhou         & Yasu Sakakibara \\
+Chen Lu         &  (CM-like models in 1994) \\
+Qi-Jia Wu       &  \\
+Yu Wang         &  \\
+Zhi-Tao Sun     &  \\
+Jia-Cong Deng   &  \\
+Yi Zhang        &  \\
+\end{tabular}
+
+\end{center}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 
 \large
@@ -815,6 +921,7 @@ New (Infernal 1.1)         & 4222.2   &  201,814 & 22,312 \\
 \textbf{Alejandro Sch\"{a}ffer} \\
 \textbf{David Landsman} \\
 \textbf{David Lipman}
+\textbf{Jim Ostell}
 
 \vspace{0.5in}
 
@@ -852,6 +959,45 @@ Michael Farrar      & \\
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{It is now easier to use Rfam/Infernal to annotate your own
+  datasets.} \\
+
+\small
+\begin{itemize}
+\item A bacterial genome takes about 30 minutes for all 2474 models.
+\end{itemize}
+
+\end{center}
+
+%\center{\includegraphics[width=10.5in]{figs/rfam-nar-table2-published}}
+%\center{\includegraphics[width=10.5in]{figs/rfam-nar-table2-bac-yellow-yescaption}}
+\center{\includegraphics[width=10.5in]{figs/rfam-nar-table2-bac-yellow-nocaption}}
+
+\vfill
+\small
+\flushleft{Nawrocki, Burge et. al, NAR 43:D130-D137, 2015.} 
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Outline of talk}
+
+\begin{description}
+\item[1.] Motivation: collecting homologs facilitates comparative
+  sequence analysis.\\ 1965: Secondary structure determination of
+  transfer RNA.
+\item[2.] Sequence and sequence+structure profiles
+%\item[3.] Benchmarking RNA homology search
+\item[3.] Accelerating RNA homology search
+\item[4.] Implications for Rfam
+%\item[\textcolor{red}{5.}] \textcolor{red}{New features in latest version of Infernal}
+\end{description}
+
+\end{center}
+\vfill
+\end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
