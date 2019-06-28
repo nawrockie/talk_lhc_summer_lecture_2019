@@ -28,7 +28,7 @@
 %Slide 0 - title
 \begin{slide}
 \begin{center}
-\large{\textbf{RNA sequence analysis using profiles}}
+\Large{\textbf{RNA sequence analysis using profiles}}
 
 \normalsize
 
@@ -85,28 +85,30 @@ Eric Nawrocki
 
 \small
 \begin{center}
-\begin{tabular}{r|l|ccc}
+\begin{tabular}{r|l|cccc}
 %\item
 %  Noncoding RNA (ncRNA): all RNAs other than mRNA
- & key RNAs involved & archaea & bacteria & eukarya \\ \hline
+ & key RNAs involved & archaea & bacteria & eukarya & viruses \\ \hline
  & \\ 
-translation & ribosomal RNAs & x & x & x \\
-            & transfer RNAs  & x & x & x \\
-            & RNase P RNA    & x & x & x \\
-            & snoRNAs        & x &   & x \\ 
-            & SRP RNA        & x & x & x \\ 
-            & tmRNA          &   & x &   \\ 
-            & RNaseMRP       &   &   & x \\ 
+translation & ribosomal RNAs & x & x & x & \\
+            & transfer RNAs  & x & x & x & \\
+            & RNase P RNA    & x & x & x & \\
+            & snoRNAs        & x &   & x & \\ 
+            & SRP RNA        & x & x & x & \\ 
+            & tmRNA          &   & x &   & \\ 
+            & RNaseMRP       &   &   & x & \\ 
             &  \\ 
-gene expression & riboswitches & ? & x & ? \\
-                & microRNAs &  & & x \\
-                & 6S RNA & & & x\\ 
+gene expression & riboswitches & ? & x & ? & \\
+                & microRNAs &  & & x & x \\
+                & 6S RNA & & x & x & \\ 
                 & \\ 
-splicing        & U1, U2, U4, U5, U6 & & & x \\ 
+splicing        & U1, U2, U4, U5, U6 & & & x & \\ 
                 & \\
-other           & telomerase RNA & & & x \\ 
-                & Y RNA          & & & x \\
-                & Vault RNA      & & & x \\
+other           & tracrRNA       & x & x & \\
+                & telomerase RNA & & & x & \\ 
+                & group I introns& x & x & x & x \\
+%                & Vault RNA      & & & x \\
+                & sfRNAs       & & & & x \\
                 & many more... & & & \\ 
 \end{tabular}
 \end{center}
@@ -122,29 +124,31 @@ other           & telomerase RNA & & & x \\
 
 \small
 \begin{center}
-\begin{tabular}{r|l|ccc}
+\begin{tabular}{r|l|cccc}
 %\item
 %  Noncoding RNA (ncRNA): all RNAs other than mRNA
- & key RNAs involved & archaea & bacteria & eukarya \\ \hline
+ & key RNAs involved & archaea & bacteria & eukarya & viruses \\ \hline
  & \\ 
-translation & ribosomal RNAs & x & x & x \\
-            & transfer RNAs  & x & x & x \\
-            & RNase P RNA    & x & x & x \\
-            & snoRNAs        & x &   & x \\ 
-            & SRP RNA        & x & x & x \\ 
-            & tmRNA          &   & x &   \\ 
-            & RNaseMRP       &   &   & x \\ 
+translation & ribosomal RNAs & x & x & x & \\
+            & transfer RNAs  & x & x & x & \\
+            & RNase P RNA    & x & x & x & \\
+            & snoRNAs        & x &   & x & \\ 
+            & SRP RNA        & x & x & x & \\ 
+            & tmRNA          &   & x &   & \\ 
+            & RNaseMRP       &   &   & x & \\ 
             &  \\ 
-gene expression & riboswitches & ? & x & ? \\
-                & microRNAs &  & & x \\
-                & 6S RNA & & & x\\ 
+gene expression & riboswitches & ? & x & ? & \\
+                & microRNAs &  & & x & x \\
+                & 6S RNA & & x & x & \\ 
                 & \\ 
-splicing        & U1, U2, U4, U5, U6 & & & x \\ 
+splicing        & U1, U2, U4, U5, U6 & & & x & \\ 
                 & \\
-other           & telomerase RNA & & & x \\ 
-                & Y RNA          & & & x \\
-                & Vault RNA      & & & x \\
-                & many more... & & & \\ 
+other           & tracrRNA       & x & x & \\
+                & telomerase RNA & & & x & \\ 
+                & group I introns& x & x & x & x \\
+%                & Vault RNA      & & & x & \\
+                & sfRNAs       & & & & x \\
+                & many more... & & & & \\ 
 \end{tabular}
 
 
@@ -878,69 +882,66 @@ E. P. Nawrocki, T. A. Jones, and S. R. Eddy, NAR, 2018, gky414}
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
-%\begin{center}
-%\textbf{Conservation levels and insertion frequency vary in SSU rRNA}
-%\end{center}
-\center{\includegraphics[width=10.5in]{figs/bacteria-info-mutinfo}}
+\center{\includegraphics[width=10.5in]{figs/16s-5s-trna-info}}
 \end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-
-\large
-\begin{center}
-\large{\textbf{Acknowledgements}} \\
-
-\normalsize
-\vspace{0.5in}
-
-\begin{tabular}{l|l}
-\textbf{Harvard/Janelia} & \textbf{NCBI} \\
-Sean Eddy                &  Alejandro Sch\"{a}ffer \\
-Tom Jones                &  David Landsman \\
-Diana Kolbe              &  Jim Ostell \\
-Travis Wheeler           &  David Lipman \\
-Elena Rivas              &  \\
-Michael Farrar           & \\
-                & \\ \hline
-                & \\
-\textbf{GISSD}  & \textbf{David Haussler's group} \\
-Yu Zhou         & Yasu Sakakibara \\
-Chen Lu         &  (CM-like models in 1994) \\
-Qi-Jia Wu       &  \\
-Yu Wang         &  \\
-Zhi-Tao Sun     &  \\
-Jia-Cong Deng   &  \\
-Yi Zhang        &  \\
-\end{tabular}
-
-\end{center}
-
-\vfill
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\large{\textbf{Central dogma of molecular biology}}
+\textbf{Sequence analysis is powerful and important}
 \end{center}
 \medskip
-\center{\includegraphics[width=5in]{figs/central-dogma}}
+
+\small
+\begin{itemize}
+\item Genome annotation of the Zika virus:
+\end{itemize}  
+
+\center{\includegraphics[width=8in]{figs/zika-genome-norna}}
+
+\begin{itemize}
+\item Zika's genome encodes a single polyprotein that is cleaved into 14 mature peptides
+\item Annotation is aided by (\emph{and adds to}) existing knowledge of homologous proteins in related flaviviruses
+\item Knowledge of genes and other features is crucial towards
+  understanding an organism (informs experiments, aids development of vaccines)
+%\item Genome annotation and sequence analysis, in general, is \emph{data science}.
+\end{itemize}
+
+%\center{\includegraphics[width=3.5in]{figs/data-science-def}}
+
 \vfill
+\tiny \flushleft{figure from ViralZone, Hulo et al. NAR. 2011 Jan;39:D576-82}
 \end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
-%\begin{center}
-%\textbf{Conservation levels and insertion frequency vary in SSU rRNA}
-%\end{center}
-\center{\includegraphics[width=10.5in]{figs/bacteria-info-mutinfo}}
+\begin{center}
+\textbf{Sequence analysis is powerful and important}
+\end{center}
+\medskip
+
+\small
+\begin{itemize}
+\item Genome annotation of the Zika virus:
+\end{itemize}  
+
+\center{\includegraphics[width=8in]{figs/zika-genome-yesrna}}
+
+\begin{itemize}
+%\item Single polyprotein that is cleaved into 14 mature peptides
+%\item Annotation enabled by existing knowledge of homologous proteins
+%  in related flaviviruses
+\item RNA structures in the 3' UTR halt host exonuclease leading to an
+  accumulation of 300-500nt subgenomic flavivirus RNAs (sfRNAs) are
+  related to pathogenicity
+\end{itemize}
+
+\normalsize
+\center{\textbf{\emph{These RNA structures are not annotated in the
+      \\ Zika genome RefSeq (NC\_012532)}}}
+
+\vfill
+\tiny \flushleft{figure from ViralZone, Hulo et al. NAR. 2011 Jan;39:D576-82}
 \end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{slide}
-%\begin{center}
-%\textbf{Conservation levels and insertion frequency vary in SSU rRNA}
-%\end{center}
-\center{\includegraphics[width=10.5in]{figs/bacteria-info-inserts}}
-\end{slide}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{slide}
 
@@ -952,7 +953,7 @@ Yi Zhang        &  \\
 
 \textbf{Alejandro Sch\"{a}ffer} \\
 \textbf{David Landsman} \\
-\textbf{David Lipman}
+\textbf{David Lipman} \\
 \textbf{Jim Ostell}
 
 \vspace{0.5in}
@@ -991,8 +992,66 @@ Michael Farrar      & \\
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
+\large{\textbf{Central dogma of molecular biology}}
+\end{center}
+\medskip
+\center{\includegraphics[width=5in]{figs/central-dogma}}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+%\begin{center}
+%\textbf{Conservation levels and insertion frequency vary in SSU rRNA}
+%\end{center}
+\center{\includegraphics[width=10.5in]{figs/bacteria-info-mutinfo}}
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+%\begin{center}
+%\textbf{Conservation levels and insertion frequency vary in SSU rRNA}
+%\end{center}
+\center{\includegraphics[width=10.5in]{figs/bacteria-info-inserts}}
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+
+\large
+\begin{center}
+\large{\textbf{Acknowledgements}} \\
+
+\normalsize
+\vspace{0.5in}
+
+\begin{tabular}{l|l}
+\textbf{Harvard/Janelia} & \textbf{NCBI} \\
+Sean Eddy                &  Alejandro Sch\"{a}ffer \\
+Tom Jones                &  David Landsman \\
+Diana Kolbe              &  Jim Ostell \\
+Travis Wheeler           &  David Lipman \\
+Elena Rivas              &  \\
+Michael Farrar           & \\
+                & \\ \hline
+                & \\
+\textbf{GISSD}  & \textbf{David Haussler's group} \\
+Yu Zhou         & Yasu Sakakibara \\
+Chen Lu         &  (CM-like models in 1994) \\
+Qi-Jia Wu       &  \\
+Yu Wang         &  \\
+Zhi-Tao Sun     &  \\
+Jia-Cong Deng   &  \\
+Yi Zhang        &  \\
+\end{tabular}
+
+\end{center}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+  \begin{center}
 \textbf{It is now easier to use Rfam/Infernal to annotate your own
   datasets.} \\
 
